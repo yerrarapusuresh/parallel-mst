@@ -2,15 +2,15 @@
 #include <random>
 #include <math.h>
 
-const int MAX = 20000;
+const int MAX = 2000;
 
 int graph[MAX][MAX];
 
 int main(){
-		int VERTICES_NUMBER,c;
+    int VERTICES_NUMBER,c;
 
-		// graph density depends on the value of the constant c
-		std::cin >> VERTICES_NUMBER >> c;
+    // graph density depends on the value of the constant c
+    std::cin >> VERTICES_NUMBER >> c;
 
     std::random_device rd;
     std::mt19937 gen(rd());
@@ -54,5 +54,6 @@ int main(){
     std::cout << std::endl;
 
     return 0;
+
 }
 
